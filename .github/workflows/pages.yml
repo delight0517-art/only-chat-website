@@ -23,11 +23,11 @@ jobs:
       id-token: write
     steps:
       - name: Check out website source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
       - name: Upload static site
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: .
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5.0.1
